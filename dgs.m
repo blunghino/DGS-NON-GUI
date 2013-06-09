@@ -311,25 +311,3 @@ while strcmp(ButtonName,'Yes')
 end
 
 
-
-
-%
-%
-% % WRITE OUTPUTS
-% save([pwd,filesep,'outputs',filesep,'DGSoutput_',datestr(now,30),'.mat'],'files', 'GrainSize', 'GSmat', 'Setts')
-% write_dgs_ascii(files, GrainSize,Setts);
-
-
-%             [gs.scale,gs.P,him] = dgs_func_get_dist_wavelet([eval(['out.dir',num2str(i)]),filesep,deblank(files{i}(ii,:))], ...
-%                 Args,docrop,dofilt,Setts.filtoptions,Setts.density);
-%             if Setts.return_used_image
-%                gs.usedImage = sample.data;
-%             end
-
-%             gs.scale=gs.scale.*Setts.res;
-%             [gs.pd,gs.gm,gs.am]=gsdparams(gs.P,gs.scale);
-%
-%             GSmat(i,ii)=gs.am(1); %gs.MeanGrainSize;
-%             GrainSize{i,ii}=gs;
-
-

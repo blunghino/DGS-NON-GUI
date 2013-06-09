@@ -1,4 +1,0 @@
-%folder = 'C:\Documents and Settings\dbuscombe\Desktop\DGS_aug2012\example_images';
-folder = '/home/dbuscombe/Dropbox/my_software/DGS/DGS_aug2012/example_images';
-% if verbose =1, more commentary printed to screen
-verbose = 0;
