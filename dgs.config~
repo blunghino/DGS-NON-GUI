@@ -1,0 +1,48 @@
+
+% ================ IMAGE FOLDER(S) =======================
+%% there are two options for pointing the program to the folder(s) on your computer which contains the images to be processed
+%% option 1 is to hard-wire the full path to the folder. For just 1 directory, create a string e.g.:
+%folder = 'C:\Documents and Settings\dbuscombe\Desktop\example_images';
+
+
+%% if more than 1 folder, create a cellular array with folders, e.g.:
+%folder{1} = 'C:\Documents and Settings\dbuscombe\Desktop\example_images2';
+%folder{2} = 'C:\Documents and Settings\dbuscombe\Desktop\example_images3';
+
+%% option 3 is to leave the folder option out, or empty, or set to zero, e.g.
+folder = 0;
+
+% ================ IMAGE RESOLUTION =======================
+% res is the image resolution (mm/pixel)
+res = 0.04;
+
+% ================ PROCESSING DENSITY =======================
+% density at which the image is sampled. If N=density, the program will 
+% analyse every Nth row of the image, so the larger the density, 
+%the quicker the processing time but the less accurate the result
+density=50;
+
+% ================ SMALLEST GRAIN SCALE =======================
+% the smallest grain scale to consider. This is a value in pixels
+start_size=1;
+
+% ================ IMAGE FILTERING =======================
+filter = 0; % 1 = yes, 0 = no
+
+%% if filter=1, then you need to specify options
+%filtoptions.boost = 3; 
+%filtoptions.CutOff = .2; 
+%filtoptions.order = 2;
+
+% ================ IMAGE FLATTENING =======================
+flatten = 1; % 1 = yes, 0 = no
+
+% ================ REQUESTED OUTPUTS =======================
+return_used_image = 1; % 1 = yes, 0 = no
+
+% if verbose =1, more commentary printed to screen
+verbose = 0;
+
+
+
+
