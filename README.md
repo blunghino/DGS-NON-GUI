@@ -30,7 +30,7 @@ https://github.com/dbuscombe-usgs
 There is also a GUI-based version of this software available 
 
 
-Wee also the project blog: 
+See also the project blog: 
 http://dbuscombe-usgs.github.com/
 
 Please download, try, report bugs, fork, modify, evaluate, discuss. Thanks for stopping by!
