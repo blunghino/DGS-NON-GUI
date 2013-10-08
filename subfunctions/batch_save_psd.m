@@ -74,7 +74,8 @@ if ~isempty(sample.dist)
     xchar = cellfun(csvFunBody, x, 'UniformOutput', false);
     xchar = strcat(xchar{:});
     xchar = strcat(xchar(1:end-1),'\r\n');
-    x={outfile}; %{sample.name};
+    ind=regexp(outfile,filesep);
+    x={outfile(ind(end)+1:end)}; %{outfile}; %{sample.name};
     xchar2 = cellfun(csvFunHead, x, 'UniformOutput', false);
     xchar2 = strcat(xchar2{:});
     xchar2 = strcat(xchar2(1:end-1));
